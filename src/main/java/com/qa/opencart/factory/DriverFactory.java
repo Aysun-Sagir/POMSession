@@ -40,7 +40,8 @@ public class DriverFactory {
 		optionsManager =new OptionsManager(prop);
 		
 		System.out.println("browser name is:" +browserName);
-		String Browser = System.getProperty("browser");
+		String Browser = System.getProperty(browserName);
+		
 		if(Browser==null) {
 //			WebDriverManager.chromedriver().setup();
 //			tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
