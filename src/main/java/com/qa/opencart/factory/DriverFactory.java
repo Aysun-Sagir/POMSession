@@ -40,6 +40,12 @@ public class DriverFactory {
 		optionsManager =new OptionsManager(prop);
 		
 		System.out.println("browser name is:" +browserName);
+		String Browser = System.getProperty("browser");
+		if(Browser==null) {
+//			WebDriverManager.chromedriver().setup();
+//			tlDriver.set(new ChromeDriver(optionsManager.getChromeOptions()));
+			System.out.println("browser is not found " +browserName);
+		}
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
 			WebDriverManager.chromedriver().setup();
