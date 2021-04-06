@@ -116,6 +116,8 @@
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
 						<suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+					<!-- <suiteXmlFile>src/test/resources/testrunners/testng_regression_chrome.xml</suiteXmlFile> 
+						<suiteXmlFile>src/test/resources/testrunners/testng_regression_firefox.xml</suiteXmlFile>  -->
 					</suiteXmlFiles>
 					
 					<argLine>

@@ -9,8 +9,17 @@
 
 </listeners>
 
+	<test name="Login Test Test_Firefox_83">
+	<parameter name="browser" value="firefox"/>
+	<parameter name="version" value="83"/>
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
 
-	<test name="Login Test">
+	</test>
+	<test name="Login Test Test_Firefox_80">
+	<parameter name="browser" value="firefox"/>
+	<parameter name="version" value="80"/>
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
@@ -18,6 +27,8 @@
 	</test>
 
 	<test name="Account Page Test">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="version" value="89"/>
 		
 		<classes>
 			<class name="com.qa.opencart.tests.AccountsPageTest" />
@@ -25,6 +36,8 @@
 
 	</test>
 	<test name="Product Info Page Test">
+	<parameter name="browser" value="chrome"/>
+	<parameter name="version" value="85"/>
 		
 		<classes>
 			<class name="com.qa.opencart.tests.ProductInfoPageTest" />

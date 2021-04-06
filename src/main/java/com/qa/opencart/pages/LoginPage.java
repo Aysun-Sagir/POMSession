@@ -28,7 +28,7 @@ public class LoginPage {
 	}
 	
 	//page actions:
-	@Step("gettirn login page title...")
+	@Step("getting login page title...")
 	public String getLoginPageTitle() {
 		return elementUtil.waitForTitleIs(5, Constants.LOGIN_PAGE_TITLE);
 
@@ -42,7 +42,8 @@ public class LoginPage {
 	@Step("login with username: {0} and password: {1}")
 	public AccountsPage doLogin(String un, String pwd) {
 		System.out.println("login with: "+un+" : "+pwd);
-		elementUtil.doSendKeys(username, un);
+		elementUtil.doSendKeys(username, un);             //
+		//elementUtil.waitForPresenceOfElement(username, 5).sendKeys(un);  =====>sistem cok yavas oldugunda ustteki code degistirip bu satirdakini kullanabilirsin`
 		elementUtil.doSendKeys(password, pwd);
 		elementUtil.doClick(login);
 		return new AccountsPage(driver);
